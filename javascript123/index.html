@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Changing Rectangle</title>
+<style>
+    #rectangle {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        border: 1px solid black;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+<div id="rectangle"></div>
+<button id="blueBtn">Blue</button>
+<button id="yellowBtn">Yellow</button>
+<button id="greenBtn">Green</button>
+<button id="clearBtn">Clear</button>
+
+<script>
+    const rectangle = document.getElementById("rectangle");
+    const blueBtn = document.getElementById("blueBtn");
+    const yellowBtn = document.getElementById("yellowBtn");
+    const greenBtn = document.getElementById("greenBtn");
+    const clearBtn = document.getElementById("clearBtn");
+
+    blueBtn.addEventListener("click", function() {
+        rectangle.style.backgroundColor = "blue";
+    });
+
+    yellowBtn.addEventListener("click", function() {
+        rectangle.style.backgroundColor = "yellow";
+    });
+
+    greenBtn.addEventListener("click", function() {
+        rectangle.style.backgroundColor = "green";
+    });
+
+    clearBtn.addEventListener("click", function() {
+        rectangle.style.backgroundColor = "white";
+    });
+</script>
+</body>
+</html>
+
+</body>
+</html>
